@@ -6,8 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="UT3" />
         <module name="UT1" />
+        <module name="UT3" />
+        <module name="PD0" />
         <module name="PD2" />
       </profile>
     </annotationProcessing>
