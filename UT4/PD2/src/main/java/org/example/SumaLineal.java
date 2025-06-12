@@ -18,3 +18,13 @@ public class SumaLineal {
 
     }
 }
+/* PSEUDOCODIGO
+Funcion SumaLineal
+COM
+    SI n = 1 ENTONCES
+        DEVOLVER A[0]
+    FIN SI
+    DEVOLVER SumaLineal(A, n-1) + A[n - 1]
+FIN
+
+ */

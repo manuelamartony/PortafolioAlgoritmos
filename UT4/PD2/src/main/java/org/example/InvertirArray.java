@@ -23,3 +23,17 @@ public class InvertirArray {
         System.out.println(Arrays.toString(a.InvertirArray(A, 0, A.length-1)));
     }
 }
+
+/* PSEUDOCODIGO
+Funcion InvertirArray
+COM
+    Si i >= j Entonces
+        Devolver A
+    Fin Si
+    aux <- A[i]
+    A[i]<- A[j]
+    A[j]<- aux
+    Devolver InvertirArray(A, i+1, j-1)
+FIN
+
+*/

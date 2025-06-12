@@ -1,0 +1,19 @@
+1)
+a)Luego de que el codigo fue ejecutado existe:
+    1 referencia del array students
+    1 referencia del stirng "Peter Parker" en students[0]
+    (no queda referencia del sting en studentName ya que este termina en null luego
+    de ejecutarse el codigo)
+b)No hay objetos candidatos a ser eliminados por el garbage collector, ya que todos los
+  objetos creados tienen por lo menos una variable activa
+
+2) Java no destruye los objetos de forma directa, sino que utiliza un garbage collector:
+    Este es un proceso formado por 3 partes, la eliminacion de referencias, siendo la primera,
+    hace que las referencias de un objeto dejen de existir (asignando un null a la referencia,
+    sobreescribiendolas, o utilozando un scope).
+    Luego de que la refenecia quede inalcanzable (no tiene referencias) el garbage collector la
+    recoge, para después Pasar al proceso de recolección. En este proceso : El garbage collector
+    se ejecuta periódicamente (o cuando el sistema lo considera necesario) e identifica los
+    objetos que ya no tienen referencias, liberando la memoria que ocupaban.
+
+3)Esta parte se encuentra en la carpeta EJ3P3

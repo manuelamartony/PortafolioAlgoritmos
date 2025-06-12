@@ -1,0 +1,19 @@
+Parte a) La primera línea que se ejecuta es “ sipo ("traqueteo", 13); “
+
+Parte b) public class Zumbido {
+ public static void desconcertar (String dirigible) {
+ 4)System.out.println (dirigible);
+ 	5) sipo ("ping", -5);
+ }
+public static void sipo (String membrillo, int flag) {
+if (flag < 0) {
+ 6)System.out.println (membrillo + " sup"); }
+} else {
+  2) System.out.println ("ik");
+  3) desconcertar (membrillo);
+  7)System.out.println ("muaa-ja-ja-ja");
+}
+}
+public static void main (String[] args) {
+ 1) sipo ("traqueteo", 13); }
+ }

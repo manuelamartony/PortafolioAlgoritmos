@@ -7,6 +7,22 @@
     <groupId>org.example</groupId>
     <artifactId>UT1</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>PD1</module>
+        <module>PD4</module>
+        <module>PD5</module>
+        <module>PD5/EJ1</module>
+        <module>PD5/EJ1/EJ1ParteB</module>
+        <module>PD5/EJ4</module>
+        <module>PD5/EJ4/EJ4Parte2</module>
+        <module>PD6</module>
+        <module>PD6/EJ1PD6</module>
+        <module>PD6/EJ2PD6</module>
+        <module>PD6/EJ4PD6</module>
+        <module>PD7</module>
+        <module>PD9</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>24</maven.compiler.source>

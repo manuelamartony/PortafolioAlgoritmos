@@ -1,0 +1,8 @@
+a)las variables son: x = 7 (el cual es un int estático) e y = 3 (el cual es un int)
+b)La variable de instancia es y = 3 ya que no es estática
+C) La salida es:
+	a.y = 5
+	b.y = 6
+	a.x = 2
+	b.x = 2
+	IdentifyMyParts.x = 2

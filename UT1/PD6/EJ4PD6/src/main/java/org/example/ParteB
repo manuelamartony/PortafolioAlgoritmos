@@ -1,0 +1,7 @@
+Descripción del codigo
+    El codigo esta formado por una clase MultiplicarVectores, la cual contiene dos
+    metodos, productoEscalar y main. En producto escalar recibe dos vectores que luego verifica si sus
+    valores son nulos, de largos diferentes o de largos iguales. Si los largos son iguales, se realiza
+    el calculo del producto escalar y se devuelve el resultado.
+    En main es donde se crean los vectores y se escribe el texto que va a aparecer en pantalla según el resultado.
+    En este codigo hay un ejemplo para cuando es posible llegar a un resultado y cuando no.

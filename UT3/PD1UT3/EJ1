@@ -1,0 +1,11 @@
+miFunción
+    Desde i = 1 hasta N-1 hacer //ORDEN O(N)
+        Desde j = N hasta i+1 hacer //ORDEN O(N)
+            Si arreglo[j].clave < arreglo[j-1].clave entonces //ORDEN 1
+                Intercambia(arreglo[j], arreglo[j-1]) //ORDEN O(1)
+            Fin si
+        Fin desde
+    Fin desde
+Fin
+
+ORDEN TOTAL = O(N**2)

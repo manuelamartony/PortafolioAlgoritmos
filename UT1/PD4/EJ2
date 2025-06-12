@@ -1,0 +1,22 @@
+1)
+Los errores:
+La variable myRect no está inicializada
+La clase Rectangle no está definida
+El método área no está definida
+2)
+public class SomethingIsWrong {
+public static void main(String[] args) {
+Rectangle myRect;
+ myRect.width = 40;
+ myRect.height = 50;
+ System.out.println("myRect's area is " + myRect.area());
+}
+ }
+Public class Rectangle {
+	public int width;
+	public int height;
+
+	public int area() {
+		return width * height;
+	}
+}

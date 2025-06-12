@@ -1,0 +1,38 @@
+ 1.
+ String s1 = "Hola";
+ String s2 = "Hola";
+ if ( s1 == s2 ) {
+ System.out.println( "True" );
+ } else {
+ System.out.println( "False" );
+ }
+ 2.
+ String s1 = new String("Hola");
+String s2 = "Hola";
+if ( s1 == s2 ) {
+System.out.println( "True" );
+} else {
+System.out.println( "False" );
+}
+
+Codigo 1:
+    Este va a devolver true ya que ambas cadenas se encuentran en la String pool, la cual
+    optimiza el uso de memoria guardando solo una vez a un string, es decir, si se crea otra cadena
+    que tiene el mismo largo y los mismos caracteres, la string pool la guarda en el mismo espacio de memoria
+    que la anterior. Esto hace que cuando comparamos si s1 == s2, este va a devolver true porque las referencias
+    estan guardadas en el mismo espacio de memoria.
+
+Codigo 2:
+    Este va a devolver false ya que se crea un nuevo objeto, lo que hace que cada cadena este
+    guardada en diferentes espacios de memoria.
+
+PARTE B)
+    String s = "1";
+    while (!s.equals("1000")) {
+        s += "0";
+    }
+
+BIBLIOGRAFIA:
+https://www.arquitecturajava.com/java-string-literal-vs-string-object/
+https://www.arquitecturajava.com/java-string-pool-un-concepto-importante/
+https://www.baeldung.com/java-string-pool

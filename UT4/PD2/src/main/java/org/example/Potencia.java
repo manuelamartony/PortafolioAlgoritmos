@@ -33,3 +33,21 @@ public class Potencia {
         }
     }
 }
+/*
+Funcion Potencia
+COM
+    SI exponente = 0 ENTONCES
+        Devolver 1
+    FIN SI
+    SINO SI exponente > 0 ENTONCES
+        Devolver numero * Potencia(numero,exponente -1)
+    FIN SINO
+    SINO
+        SI numero = 0 ENTONCES
+            EXCEPCION
+        FIN SI
+        DEVOLVER 1/(numero * Potencia(numero, -exponente - 1))
+   FIN SINO
+FIN
+
+ */

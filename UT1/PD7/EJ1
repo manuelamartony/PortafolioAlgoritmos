@@ -1,0 +1,10 @@
+El bucle infinito ocurre porque "!=" compara las referencias de los objetos
+no sus valores. Java verifica si ambas referencias apuntan al mismo objeto en memoria, en este caso,
+s y 1000 no apuntan al mismo espacio de memoria, aunque sus valores puedan llegar a ser iguales.
+
+En C# el codigo funcionaría correctamente ya que == compara los valores en las cadenas que se evaluan.
+Estas son comparaciones ordinarias ya que estas distinguen las mayusculas y minusculas.
+
+bibliografía:
+    https://academiasanroque.com/comparaciones-en-java-equals-equalsignorecase-y-mas/
+    https://learn.microsoft.com/es-es/dotnet/csharp/language-reference/operators/equality-operators

@@ -1,0 +1,13 @@
+La salida del programa es:
+“No, yo pac.
+Vos zacata pac.
+Yo pac.”
+
+El programa comienza en el método main, el cual imprime "No, yo " y luego llama al método zoop(). Dentro de este,
+se ejecuta el método baffle(), que imprime "pac".
+Luego, se ejecuta el método pig(), que imprime un punto (.) y cambia de renglón, ya que utiliza println.Como ping()
+no invoca ninguna otra función, se retorna a zoop(), donde se imprime "Vos zacata". Después, se llama nuevamente al
+método baffle() , que repite la impresión de "pac" y vuelve a llamar a ping() , el cual imprime otro punto (.) y cambia
+de renglón.
+Finalmente, se retorna al método  main, que imprime "Yo " y llama una vez más al método baffle() , resultando en la
+impresión final de "pac."

@@ -1,0 +1,69 @@
+---------------EJERCICIO 1-----------------
+Nuevo nodo otroNodo
+otroNodo.siguiente  nodo1
+nodo2.siguiente  nodo3
+a) Inserta “otroNodo” en la lista, quedando como anterior a nodo1.
+b) Inserta “otroNodo” en la lista, quedando entre nodo1 y nodo2.
+c) Elimina nodo2 de la lista.
+d) No tiene ningún efecto sobre la lista.
+
+RESPUESTA: A
+
+---------------EJERCICIO 2-----------------
+Nuevo nodo otroNodo
+otroNodo  nodo1.siguiente
+nodo1.siguiente  nodo3
+a) Inserta “otroNodo” en la lista, quedando como anterior a nodo1.
+b) Inserta “otroNodo” en la lista, quedando entre nodo1 y nodo2.
+c) Elimina nodo2 de la lista.
+d) No tiene ningún efecto sobre la lista.
+
+RESPUESTA C
+
+---------------EJERCICIO 3-----------------
+
+Nuevo nodo otroNodo
+otroNodo.siguiente  nodo1.siguiente
+nodo1.siguiente  otroNodo
+a) Inserta “otroNodo” en la lista, quedando como anterior a nodo1.
+b) Inserta “otroNodo” en la lista, quedando entre nodo1 y nodo2.
+c) Elimina nodo2 de la lista.
+d) Dará error en tiempo de ejecución si nodo1 es el primero o nodo3 es el último.
+
+RESPUESTA B
+
+---------------EJERCICIO 4-----------------
+Nuevo nodo otroNodo
+Nuevo nodo nodoActual
+nodoActual  primero
+mientras nodoActual <> nulo hacer
+nodoActual  nodoActual.siguiente
+fin mientras
+nodoActual.siguiente  otroNodo
+a) Inserta correctamente “otroNodo” en la lista, quedando como último nodo.
+b) Inserta correctamente “otroNodo” en la lista, quedando como primer nodo.
+c) El algoritmo está mal hecho, ya que dará error en tiempo de ejecución si la lista está
+vacía.
+d) El algoritmo está mal hecho, ya que dará siempre error en tiempo de ejecución.
+
+RESPUESTA C
+
+---------------EJERCICIO 5-----------------
+Nuevo nodo otroNodo
+Nuevo nodo nodoActual
+nodoActual  primero
+mientras nodoActual.siguiente <> nulo hacer
+nodoActual  nodoActual.siguiente
+fin mientras
+nodoActual.siguiente  otroNodo
+a) Inserta correctamente “otroNodo” en la lista, quedando como último nodo.
+b) Inserta correctamente “otroNodo” en la lista, quedando como primer nodo.
+c) El algoritmo está mal hecho, ya que dará error en tiempo de ejecución si la lista está
+vacía.
+d) El algoritmo está mal hecho, ya que dará siempre error en tiempo de ejecución.
+
+RESPUESTA A
+
+---------------EJERCICIO 6-----------------
+
+

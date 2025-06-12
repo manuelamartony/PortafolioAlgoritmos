@@ -6,10 +6,29 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="UT1" />
+        <module name="PD5" />
+        <module name="PD7" />
+        <module name="PD6" />
         <module name="TA10" />
+        <module name="UT3-PD3" />
+        <module name="Primerparcial2024" />
+        <module name="EJ1" />
+        <module name="EJ4" />
+        <module name="PD1UT3" />
+        <module name="EJ1PD9" />
+        <module name="EJ2PD9" />
+        <module name="EJ4Parte2" />
+        <module name="EJ1ParteB" />
+        <module name="UT6" />
+        <module name="UT5" />
+        <module name="EJ4PD6" />
+        <module name="UT7" />
+        <module name="PD1" />
+        <module name="EJ2PD6" />
         <module name="PD0" />
+        <module name="EJ1PD6" />
         <module name="PD2" />
+        <module name="EJ3P3" />
       </profile>
     </annotationProcessing>
   </component>

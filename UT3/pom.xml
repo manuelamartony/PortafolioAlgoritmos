@@ -10,6 +10,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>TA10</module>
+        <module>PD1UT3</module>
+        <module>UT3-PD3</module>
     </modules>
 
     <properties>
