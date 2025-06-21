@@ -1,4 +1,4 @@
-package uy.edu.ucu.aed.tdas;
+package org.example;
 
 public class TAdyacencia implements IAdyacencia {
    

@@ -1,4 +1,5 @@
-package uy.edu.ucu.aed.utils;
+package org.example;
+
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -43,11 +44,12 @@ public class ManejadorArchivosGenerico {
 	 * Lee un archivo de texto y devuelve su contenido como un array de strings.
 	 *
 	 * @param nombreCompletoArchivo El nombre y ruta del archivo a leer.
+	 * @param ignoreHeader
 	 * @return Un array de strings, cada uno de los cuales contiene una línea del archivo.
 	 * @throws FileNotFoundException Si el archivo no se encuentra en la ruta especificada.
-	 * @throws IOException Si ocurre un error de entrada/salida al leer el archivo.
+	 * @throws IOException           Si ocurre un error de entrada/salida al leer el archivo.
 	 */
-	public static String[] leerArchivo(String nombreCompletoArchivo) {
+	public static String[] leerArchivo(String nombreCompletoArchivo, boolean ignoreHeader) {
 		FileReader fr;
 		ArrayList<String> listaLineasArchivo = new ArrayList<String>();
 		try {

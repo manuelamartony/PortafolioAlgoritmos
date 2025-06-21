@@ -1,4 +1,5 @@
-package uy.edu.ucu.aed.tdas;
+package org.example;
+
 
 public class TArista implements IArista {
 

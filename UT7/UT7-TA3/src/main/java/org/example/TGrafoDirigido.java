@@ -1,4 +1,5 @@
-package uy.edu.ucu.aed.tdas;
+package org.example;
+
 
 import java.util.Collection;
 import java.util.HashMap;

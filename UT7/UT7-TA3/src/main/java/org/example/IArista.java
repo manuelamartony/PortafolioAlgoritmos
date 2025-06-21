@@ -1,4 +1,5 @@
-package uy.edu.ucu.aed.tdas;
+package org.example;
+
 
 /*
  * To change this license header, choose License Headers in Project Properties.

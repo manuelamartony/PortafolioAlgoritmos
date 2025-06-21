@@ -1,4 +1,5 @@
-package uy.edu.ucu.aed.tdas;
+package org.example;
+
 
 import java.util.LinkedList;
 
@@ -25,6 +26,11 @@ public class TVertice<T> implements IVertice {
 
     public void setVisitado(boolean valor) {
         this.visitado = valor;
+    }
+
+    @Override
+    public LinkedList<IVertice> bpf() {
+        return null;
     }
 
     public boolean getVisitado() {
