@@ -4,10 +4,7 @@
  * and open the template in the editor.
  */
 
-/**
- *
- * @author ernesto
- */
+package org.example;
 public interface ICamino {
 
     boolean agregarAdyacencia(TAdyacencia adyacenciaActual);

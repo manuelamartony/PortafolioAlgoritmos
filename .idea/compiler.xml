@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="PD5" />
+        <module name="UT7-TA5 Y TA4" />
         <module name="PD7" />
         <module name="PD6" />
         <module name="TA10" />
@@ -18,11 +19,11 @@
         <module name="EJ1PD9" />
         <module name="EJ2PD9" />
         <module name="EJ4Parte2" />
+        <module name="UT7-TA3" />
         <module name="EJ1ParteB" />
         <module name="UT6" />
         <module name="UT5" />
         <module name="EJ4PD6" />
-        <module name="UT7" />
         <module name="PD1" />
         <module name="EJ2PD6" />
         <module name="PD0" />

@@ -1,4 +1,4 @@
-
+package org.example;
 import static java.lang.System.in;
 import java.util.Collection;
 

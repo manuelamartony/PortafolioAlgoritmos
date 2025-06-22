@@ -1,4 +1,4 @@
-
+package org.example;
 import java.util.Collection;
 import java.util.LinkedList;
 
@@ -30,6 +30,11 @@ public class TVertice<T> implements IVertice {
 
     public boolean getVisitado() {
         return this.visitado;
+    }
+
+    @Override
+    public Object bpf() {
+        return null;
     }
 
     @Override

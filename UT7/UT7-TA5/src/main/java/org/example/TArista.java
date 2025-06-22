@@ -1,4 +1,4 @@
-
+package org.example;
 public class TArista implements IArista {
 
     protected Comparable etiquetaOrigen;

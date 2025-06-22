@@ -1,13 +1,11 @@
+package org.example;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
 import java.util.TreeMap;
 
-/**
- *
- * @author Ernesto
- */
+
 public class TGrafoDirigido implements IGrafoDirigido {
 
     private final Map<Comparable, TVertice> vertices; // vertices del grafo.-
@@ -191,20 +189,33 @@ public class TGrafoDirigido implements IGrafoDirigido {
     }
 
     @Override
-    public Collection<TVertice> bpf() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Collection<IVertice> bpf() {
+        LinkedList<IVertice> verticesVisitados = new LinkedList<IVertice>();
+        for (IVertice vertice : vertices.values()){
+            if(!vertice.getVisitado()){
+                LinkedList<IVertice> nuevaLista= (LinkedList<IVertice>) vertice.bpf();
+                for (IVertice vertice2 : nuevaLista){
+                    verticesVisitados.add((TVertice)vertice2);
+                }
+            }
+
+        }
+        return verticesVisitados;
     }
 
    
     @Override
     public Collection<TVertice> bpf(Comparable etiquetaOrigen) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        IVertice origen = vertices.get(etiquetaOrigen);
+        return (Collection<TVertice>) origen.bpf();
     }
+
 
 
     @Override
     public Collection<TVertice> bpf(TVertice vertice) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        IVertice origen = vertices.get(vertice.getEtiqueta());
+        return (Collection<TVertice>) origen.bpf();
     }
 
     @Override

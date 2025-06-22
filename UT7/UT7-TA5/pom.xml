@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>UT7-TA5</artifactId>
+    <artifactId>UT7-TA5 Y TA4</artifactId>
 
     <properties>
         <maven.compiler.source>24</maven.compiler.source>

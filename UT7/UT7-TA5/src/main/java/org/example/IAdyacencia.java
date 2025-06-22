@@ -4,10 +4,7 @@
  * and open the template in the editor.
  */
 
-/**
- *
- * @author Ernesto
- */
+package org.example;
 public interface IAdyacencia {
 
     double getCosto();

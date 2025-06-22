@@ -1,14 +1,14 @@
-
+package org.example;
 import java.util.Collection;
 import java.util.Map;
 
 public interface IGrafoDirigido {
 
-    Collection<TVertice> bpf();
+    Collection<IVertice> bpf();
 
     Collection<TVertice> bpf(TVertice vertice);
 
-    Collection<TVertice> bpf(Comparable etiquetaOrigen);
+    Object bpf(Comparable etiquetaOrigen);
 
     /**
      * @return Etiqueta del centro del grafo
