@@ -9,6 +9,9 @@ import java.util.TreeMap;
 public class TGrafoDirigido implements IGrafoDirigido {
 
     private Map<Comparable, IVertice> vertices; // vertices del grafo.-
+    private boolean floydCalculado = false;
+    private Double[][] matrizFloyd = null;
+    private String[][] matrizPredecedores= null;
 
     public TGrafoDirigido(Collection<IVertice> vertices, Collection<IArista> aristas) {
         this.vertices = new HashMap<>();
@@ -146,7 +149,31 @@ public class TGrafoDirigido implements IGrafoDirigido {
 
 
     public Double[][] floyd() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if (floydCalculado & matrizFloyd != null){
+            return matrizFloyd;
+        }
+        int cant = vertices.size();
+        Double[][] resultado = UtilGrafos.obtenerMatrizCostos(vertices);
+        Object[] aereopuertos = getEtiquetasOrdenado();
+
+        // Algoritmo Floyd
+        for (int k = 0; k < cant; k++) {
+            for (int i = 0; i < cant; i++) {
+                for (int j = 0; j < cant; j++) {
+                    if (resultado[i][k] != Double.MAX_VALUE &&
+                            resultado[k][j] != Double.MAX_VALUE) {
+
+                        Double nuevoCosto = resultado[i][k] + resultado[k][j];
+                        if (nuevoCosto < resultado[i][j]) {
+                            resultado[i][j] = nuevoCosto;
+                        }
+                    }
+                }
+            }
+        }
+        this.matrizFloyd = resultado;
+        this.floydCalculado = true;
+        return resultado;
     }
 
     public Comparable obtenerExcentricidad(Comparable etiquetaVertice) {
