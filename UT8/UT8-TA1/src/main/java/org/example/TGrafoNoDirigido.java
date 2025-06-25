@@ -1,6 +1,7 @@
-package uy.edu.ucu.aed;
+package org.example;
 
 import java.util.Collection;
+import java.util.LinkedList;
 
 public class TGrafoNoDirigido extends TGrafoDirigido implements IGrafoNoDirigido {
     protected TAristas lasAristas = new TAristas();
@@ -30,7 +31,25 @@ public class TGrafoNoDirigido extends TGrafoDirigido implements IGrafoNoDirigido
 
     @Override
     public TGrafoNoDirigido Prim() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        LinkedList<Comparable> u = new LinkedList();
+        LinkedList<Comparable> v = new LinkedList(getVertices().keySet());
+        Comparable tmp = v.getFirst();
+        u.add(tmp);
+        v.remove(tmp);
+        Double costo = 0.0;
+        TAristas aristasAAM = new TAristas();
+
+        while (!v.isEmpty()) {
+            TArista tmparista = lasAristas.buscarMin(u,v);
+            aristasAAM.add(tmparista);
+            u.add(tmparista.getEtiquetaDestino());
+            v.remove(tmparista.getEtiquetaDestino());
+            costo += tmparista.getCosto();
+
+        }
+        TGrafoNoDirigido grafoNoDirigido = new TGrafoNoDirigido(getVertices().values(),aristasAAM);
+        return grafoNoDirigido;
+
     }
 
     @Override
