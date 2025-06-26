@@ -58,7 +58,15 @@ public class TGrafoNoDirigido extends TGrafoDirigido implements IGrafoNoDirigido
     }
 
     @Override
-    public Collection<TVertice> bea(Comparable etiquetaOrigen) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public String bea(Comparable etiquetaOrigen) {
+
+        Collection<TVertice> visitados = new LinkedList<>();
+        this.bea((Comparable) visitados);
+        StringBuilder tmp = new StringBuilder();
+        for (TVertice v : visitados){
+            tmp.append(v.getEtiqueta());
+        }
+        return tmp.toString();
     }
-}
+
+    }

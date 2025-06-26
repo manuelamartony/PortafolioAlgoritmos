@@ -6,7 +6,7 @@ public interface IGrafoNoDirigido {
 
     Collection<TVertice> bea();
 
-    Collection<TVertice> bea(Comparable etiquetaOrigen);
+    String bea(Comparable etiquetaOrigen);
 
     TGrafoNoDirigido Prim();
 

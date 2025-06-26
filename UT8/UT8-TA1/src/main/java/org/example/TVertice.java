@@ -102,7 +102,24 @@ public class TVertice implements IVertice {
 
     @Override
     public void bea(Collection<TVertice> visitados) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        LinkedList<TVertice> cola =  new LinkedList<TVertice>();
+        this.setVisitado(true);
+        visitados.add(this);
+        cola.add(this);
+
+        while (!cola.isEmpty()) {
+            TVertice x =  cola.removeFirst();
+
+            for (TAdyacencia adyacencia : x.getAdyacentes()) {
+                TVertice y = adyacencia.getDestino();
+                if (!y.getVisitado()){
+                    y.setVisitado(true);
+                    visitados.add(y);
+                    cola.add(y);
+                }
+            }
+        }
+
     }
 
     @Override
